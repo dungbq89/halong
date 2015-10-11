@@ -1,5 +1,6 @@
 ﻿<div class="col-left">
     <?php include_component('moduleAdvertise','topOne'); ?>
+    <?php include_component('moduleArticle','categoryNews',array('limit'=>15)) ?>
 </div>
 
 <div class="col-right-new">

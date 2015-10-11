@@ -181,3 +181,25 @@
     width: 100%;
     margin: 0px;
 }
+.box-news-home{
+    width: 308px;
+    float: left;
+    margin-right: 25px;
+}
+.news-title{
+    margin-bottom: 10px;
+}
+.readmore{
+    color: #bf0000;
+}
+.more-news{
+    clear: both;
+    padding-top: 10px;
+}
+.ul-more-news{
+    margin-left: 5px;
+}
+.ul-more-news li{
+    line-height: 20px;
+    list-style: circle;
+}
