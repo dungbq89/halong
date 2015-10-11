@@ -58,7 +58,6 @@
 
 
     <?php echo $sf_content ?>
-    <?php include_component('moduleMenu','linkFooter') ?>
     <div class="clear"></div>
 </div>
 <div id="dfooter">

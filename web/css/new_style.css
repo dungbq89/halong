@@ -1,49 +1,56 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
 }
-#main-header{
+
+#main-header {
     width: 100%;
     height: 190px;
     background-color: #006bbb;
 }
-.new-header{
+
+.new-header {
     min-width: 975px;
     margin: 0 auto;
 }
-.top-header{
+
+.top-header {
     background-color: #0060a8;
     height: 28px;
 }
-.content-top-header{
+
+.content-top-header {
     width: 975px;
     margin: 0 auto;
     text-align: right;
 
 }
-.txt-header{
+
+.txt-header {
     color: #fff;
     line-height: 28px;
 }
-.split-header{
+
+.split-header {
     width: 75px;
     height: 28px;
     background: url("../img/border.jpg") no-repeat;
     float: right;
 }
-.txt-date-day{
+
+.txt-date-day {
     color: #fff;
     line-height: 28px;
     margin-right: 20px;
 }
 
-.txt-language{
+.txt-language {
     color: #fff;
     line-height: 28px;
     margin-right: 5px;
 }
 
-.a-language-viet{
+.a-language-viet {
     width: 22px;
     height: 28px;
     background: url("../img/vietnam.jpg") no-repeat;
@@ -51,7 +58,7 @@
     display: inline-block;
 }
 
-.a-language-eng{
+.a-language-eng {
     width: 22px;
     height: 28px;
     background: url("../img/english.jpg") no-repeat;
@@ -59,72 +66,118 @@
     display: inline-block;
     margin-right: 10px;
 }
-.p-header{
+
+.p-header {
     width: 100px;
 }
-.logo-halong{
+
+.logo-halong {
     width: 975px;
     margin: 0 auto;
     clear: both;
     margin-top: 10px;
 }
-#menu{
+
+#menu {
     width: 975px;
     margin: 0 auto;
 }
-.nav{
+
+.nav {
     background-color: #006bbb;
 }
-.nav ul li a{
+
+.nav ul li a {
     border-right: none;
 }
-.box-notic{
+
+.box-notic {
     width: 670px;
     float: left;
 }
-#box-news-top{
+
+#box-news-top {
     height: 20px;
 }
-#form-search{
+
+#form-search {
     float: right;
 }
-.yahoo{
+
+.yahoo {
     float: left;
     padding-top: 6px;
 }
-.frm-search{
+
+.frm-search {
     width: 200px;
 }
-.col-left{
+
+.col-left {
     clear: both;
     width: 670px;
     float: left;
 }
-.col-right-new{
+
+.col-right-new {
     float: right;
     width: 300px;
     padding-left: 10px;
 }
-.tinh-nang{
+
+.tinh-nang {
 
 }
-.ul-tinh-nang{
+
+.ul-tinh-nang {
 
 }
-.ul-tinh-nang li{
+
+.ul-tinh-nang li {
     line-height: 25px;
     margin-bottom: 5px;
 }
-.ul-tinh-nang a{
+
+.ul-tinh-nang a {
     margin-left: 32px;
     font-weight: bold;
     font-size: 13px;
 }
-.h3-tinh-nang{
+
+.ul-tinh-nang a:hover {
+    color: #005b9f;
+}
+
+.h3-tinh-nang {
     color: #005b9f;
     padding: 10px 0px 5px;
     font-weight: bold;
     text-transform: uppercase;
     border-bottom: 2px solid #006bbb;
     margin-bottom: 8px;
+}
+
+.link-images {
+    margin: 20px 0px;
+}
+
+.img-list {
+    display: block;
+    margin-bottom: 3px;
+}
+
+.more-video h3 {
+    background: none;
+    line-height: 17px;
+}
+
+.more-video a {
+    background: rgba(0, 0, 0, 0) url("../img/img-bulet.png") no-repeat scroll 0 10px;
+}
+.link-website{
+    margin-bottom: 20px;
+}
+#link-right{
+    width: 100%;
+    margin: 0px;
 }
