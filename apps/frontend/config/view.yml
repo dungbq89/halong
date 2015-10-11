@@ -19,10 +19,10 @@ default:
     - jquery.bxslider.css
     - style-table.css
     - lightslider.css
-    - jquery.ui.core.js
     - ui.datepicker.css
     - ui.theme.css
     - coder_update.css
+    - new_style.css
 
   javascripts:
     - jquery.min.js
