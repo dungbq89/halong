@@ -1,0 +1,114 @@
+connection: slave
+options:
+  collate: utf8_general_ci
+  charset: utf8
+  type: InnoDB
+csdl_lylichhoivien:
+  tableName: csdl_lylich_hoivien
+  actAs:
+    Timestampable: ~
+  columns:
+    hoivien_id: { type: integer(5), comment: "ma hoi vien"}
+    ten: { type: string(255), comment: "Tên hội viên" }
+    hodem: { type: string(255), comment: "Họ + tên hội viên" }
+    ngaysinh: { type: timestamp(25), comment: "ngay sinh cua hoi vien" }
+    gioitinh: { type: string(25), comment: "Gioi tinh" }
+    diachi: { type: string(255), comment: "dịa chỉ" }
+    maquan: { type: string(25), comment: "Ma quan/huyen" }
+    matinh: { type: string(255), comment: "Ma tinh/thanh pho" }
+    ngayvaodoan: { type: timestamp(25), comment: "ngay vao doan" }
+    noiketnapdoan: { type: string(255), comment: "nơi kết nạp đoàn" }
+    ngayvaodang: { type: timestamp(25), comment: "ngay vao dang" }
+    noiketnapdang: { type: string(255), comment: "nơi kết nạp đảng" }
+    tieusu: { type: string(1000), comment: "nơi kết nạp đảng" }
+    nghenghiep_id: { type: integer(5), comment: "Danh muc nghe nghiep"}
+    dantoc_id: { type: integer(5), comment: "Danh muc dan toc"}
+    quoctich: { type: string(255), comment: "quoc tich" }
+    donvi_id:  { type: integer(5), comment: "don vị công tác"}
+    images:  { type: string(255), comment: "hinh anh" }
+    dienthoai: { type: string(255), comment: "Số điện thoại" }
+    email: { type: string(255), comment: "Email" }
+  relations:
+    Groups:
+      class: sfGuardUserHNB
+      local: hoivien_id
+      type: one
+      foreignAlias: sfGuardUserHoiVien
+#Danh mục tỉnh/ thành phố quận/ huyện
+csdl_area:
+  tableName: csdl_area
+  columns:
+    PROVINCE: { type: string(25), comment: "Ma tinh" }
+    DISTRICT: { type: string(25), comment: "Ma huyen" }
+    PRECINCT: { type: string(25), comment: "Ma phuong,xa" }
+    STREET_BLOCK:  { type: string(255), comment: "khu pho" }
+    STREET:  { type: string(255), comment: "duong pho" }
+    NAME:  { type: string(255), comment: "ten don vi" }
+    FULL_NAME:  { type: string(255), comment: "Ten day du" }
+    STATUS: { type: integer(5), comment: "trang thai"}
+#Danh mục cơ quan báo chí
+csdl_coquanbaochi:
+  tableName: csdl_coquan_baochi
+  actAs:
+    VtBlameable: ~
+    Timestampable: ~
+  columns:
+    madonvi: { type: string(25), comment: "Ma don vi" }
+    tendonvi: { type: string(255), comment: "ten don vi" }
+    gioithieu:  { type: string(500), comment: "Gioi thieu" }
+    nguoidaidien: { type: string(255), comment: "nguoi dai dien" }
+    anhdaidien: { type: string(255), comment: "hinh anh" }
+    thutu: { type: integer(5), comment: "Thu tu hien thi"}
+    trangthai: { type: integer(5), comment: "trang thai"}
+#Danh mục nghề nghiệp
+csdl_dmnghenghiep:
+  tableName: csdl_dm_nghenghiep
+  actAs:
+    VtBlameable: ~
+    Timestampable: ~
+  columns:
+    tendanhmuc: { type: string(255), comment: "ten danh muc" }
+    gioithieu:  { type: string(500), comment: "Gioi thieu" }
+    anhdaidien: { type: string(255), comment: "hinh anh" }
+    thutu: { type: integer(5), comment: "Thu tu hien thi"}
+    trangthai: { type: integer(5), comment: "trang thai"}
+
+#Danh sach user
+sfGuardUserHNB:
+  tableName: sf_guard_user
+  actAs: [Timestampable]
+  columns:
+    first_name: string(255)
+    last_name: string(255)
+    phone: string(15)
+    email_address:
+      type: string(255)
+      notnull: false
+      unique: true
+    username:
+      type: string(255)
+      notnull: true
+      unique: true
+    algorithm:
+      type: string(255)
+      default: sha1
+      notnull: true
+    salt: string(255)
+    password: string(255)
+    is_active:
+      type: boolean
+      default: 0
+    is_super_admin:
+      type: boolean
+      default: false
+    last_login:
+      type: timestamp
+    pass_update_at:
+      type: timestamp
+    is_lock_signin:
+      type: boolean
+    locked_time:
+      type: integer
+  indexes:
+    is_active_idx:
+      fields: [is_active]

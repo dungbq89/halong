@@ -1,0 +1,41 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/13-View
+
+default:
+  http_metas:
+    content-type: text/html
+
+  metas:
+    #title:        symfony project
+    #description:  symfony project
+    #keywords:     symfony, project
+    #language:     en
+    #robots:       index, follow
+
+  stylesheets:
+    - reset.css
+    - style.css
+    - jquery.mCustomScrollbar.css
+    - jquery.bxslider.css
+    - style-table.css
+    - lightslider.css
+    - jquery.ui.core.js
+    - ui.datepicker.css
+    - ui.theme.css
+    - coder_update.css
+
+  javascripts:
+    - jquery.min.js
+    - jquery.mCustomScrollbar.concat.min.js
+    - jquery.bxslider.min.js
+    - main.js
+    - lightslider.js
+    - jwplayer/jwplayer.js
+    - scroll.js
+    - jquery-migrate-1.0.0.js
+    - jquery.ui.datepicker.js
+    - ui.datepicker.min.js
+    - jquery-ui-1.8.22.custom.min.js
+    - jquery-ui-timepicker-addon.js
+  has_layout:     true
+  layout:         layout
