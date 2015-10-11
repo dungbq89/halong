@@ -1,30 +1,29 @@
-﻿
+﻿<div class="col-left">
+    <?php include_component('moduleAdvertise','topOne'); ?>
+</div>
+
+<div class="col-right-new">
+    <div class="tinh-nang">
+        <h3 class="h3-tinh-nang"><?php echo __("Tính năng thường dùng"); ?></h3>
+        <ul class="ul-tinh-nang">
+            <li style="background: url('../img/icon-mess.jpg') no-repeat;"><a href="#">Diễn Đàn</a></li>
+            <li style="background: url('../img/totnghiep.jpg') no-repeat;"><a href="#">Danh sách tốt nghiệp tạm thời</a></li>
+            <li style="background: url('../img/hopthu.jpg') no-repeat;"><a href="#">Hộp thư giảng viên</a></li>
+            <li style="background: url('../img/icon-mess.jpg') no-repeat;"><a href="#">Hộp thư sinh viên</a></li>
+            <li style="background: url('../img/totnghiep.jpg') no-repeat;"><a href="#">Nhân sự</a></li>
+            <li style="background: url('../img/hopthu.jpg') no-repeat;"><a href="#">Quản lý lớp học</a></li>
+            <li style="background: url('../img/icon-mess.jpg') no-repeat;"><a href="#">Sàn giao dịch công nghệ</a></li>
+            <li style="background: url('../img/totnghiep.jpg') no-repeat;"><a href="#">Tra cứu TT đăng ký xét tuyển</a></li>
+            <li style="background: url('../img/hopthu.jpg') no-repeat;"><a href="#">Xem điểm trực tuyến</a></li>
+
+        </ul>
+    </div>
+</div>
+
+
 
 <div class="box-hot">
-    <div class="box-hot-news">
-        <?php include_component('moduleArticle','newArticle',array('limit'=>10,'att'=>1)) ?>
-
-        <div class="sct sidebar" id="right1">
-<!--            tin anh-->
-            <?php include_component('moduleArticle','newsImages',array('limit'=>5,'att'=>2)) ?>
-<!--            quang cao top-->
-            <?php include_component('moduleAdvertise','rightTop',array('location'=>'right_top')) ?>
-
-            <div class="contact">
-                <ul>
-                    <li class="email">
-                        <span>Email</span>
-                        <a href="mailto:hatinhdientu@gmail.com" title="Gửi email">nguoilambao168@gmail.com</a>
-                        | <a onclick="dj('#quick-mail').show();return false" href="http://hoinhabaohatinh.vn/lien-he" title="Liên hệ">Liên hệ</a>
-                    </li>
-                    <li class="phone">
-                        <span>Đường dây nóng</span>
-                        <a title="Đường dây nóng" onclick="dj('#quick-phone').show();return false" href="#">Đường dây nóng: <b> 0393.855463 - 850548</b></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
+    
     <div class="clear"></div>
     <div class="line"></div>
     <?php include_component('moduleArticle','focusNews',array('limit'=>5,'att'=>8)) ?>
