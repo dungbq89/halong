@@ -204,5 +204,5 @@
     list-style: circle;
 }
 .news-txt{
-    height: auto;
+    height: auto !important;
 }
