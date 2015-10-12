@@ -1,5 +1,7 @@
 <?php if (isset($categories) && $categories): ?>
-    <?php foreach ($categories as $category): ?>
+    <?php
+    $check = 1;
+    foreach ($categories as $category): ?>
         <?php
         $listNews = $category->getNewsByCategory();
         $count=count($listNews);
@@ -20,7 +22,7 @@
                         ?>
                     </span>
                     <a href="<?php echo url_for2('article_detail', array('slug' => $listNews[0]['slug'])) ?>" title=""
-                       class="news-img"><img style="margin-top: 5px;" src="<?php echo VtHelper::getThumbUrl($path, 125, 80, 'image_hot') ?>" alt=""></a>
+                       class="news-img"><img style="margin-top: 5px;" src="<?php echo VtHelper::getThumbUrl($path, 125, 80, 'image_125_80') ?>" alt=""></a>
 
                     <div class="news-info-cat">
                         <p class="news-txt"><?php echo VtHelper::truncate($listNews[0]['header'], 80, '...'); ?><a href="<?php echo url_for2('article_detail', array('slug' => $listNews[0]['slug'])) ?>" class="readmore" title="Xem tiếp">...Chi tiết >></a></p>
@@ -44,6 +46,21 @@
 
                 <div class="clear"></div>
             </div>
+            <?php
+                if($check%2==0){
+                    ?>
+                    <div class="clear"></div>
+                    <div class="banner-home">
+                        <a href="#" class=""><img src="../img/home_tuvan.jpg" width="315"/></a>
+                        <a href="#" class=""><img src="../img/home_tracuu.jpg" width="315"/></a>
+                        <a href="#" class=""><img src="../img/home_hocbong.jpg" width="315"/></a>
+                        <a href="#" class=""><img src="../img/home_tructuyen.jpg" width="315"/></a>
+                    </div>
+                    <?php
+                }
+            ?>
         <?php endif; ?>
-    <?php endforeach; ?>
+    <?php
+    $check++;
+    endforeach; ?>
 <?php endif; ?>

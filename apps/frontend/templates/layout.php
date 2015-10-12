@@ -70,7 +70,7 @@
             <div class="info vcard hide-on-small">
                 Liên hệ quảng cáo<br>
                 Thông tin Tòa soạn: <a style="font-weight:bold" href="mailto:hatinhdientu@gmail.com">nguoilambao168@gmail.com</a><br>
-				<div align='right'><a href='http://hoinhabaohatinh.vn'>Lượt truy cập</a><br /><a href='http://hoinhabaohatinh.vn'><img src='http://www.hit-counts.com/counter.php?t=MTM2NTEyOA==' border='0' alt='Lượt truy cập'></a></div>
+<!--				<div align='right'><a href='http://hoinhabaohatinh.vn'>Lượt truy cập</a><br /><a href='http://hoinhabaohatinh.vn'><img src='http://www.hit-counts.com/counter.php?t=MTM2NTEyOA==' border='0' alt='Lượt truy cập'></a></div>-->
             </div>
             <div style="clear:both"></div>
         </div>

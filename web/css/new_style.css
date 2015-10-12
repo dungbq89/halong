@@ -206,3 +206,7 @@
 .news-txt{
     height: auto !important;
 }
+.banner-home{
+    clear: both;
+    margin: 10px 0px;
+}
