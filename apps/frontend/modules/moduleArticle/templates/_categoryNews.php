@@ -16,16 +16,18 @@
                 <div class="item news-item">
                     <a href="<?php echo url_for2('article_detail', array('slug' => $listNews[0]['slug'])) ?>"
                        title="" class="news-title"><?php echo VtHelper::truncate($listNews[0]['title'],60, ' ...'); ?></a>
-                    <span class="news-date">
-                        <?php
-                        if ($listNews[0]['published_time']) echo VtHelper::getFormatDate($listNews[0]['published_time']);
-                        ?>
-                    </span>
+
                     <a href="<?php echo url_for2('article_detail', array('slug' => $listNews[0]['slug'])) ?>" title=""
                        class="news-img"><img style="margin-top: 5px;" src="<?php echo VtHelper::getThumbUrl($path, 125, 80, 'image_125_80') ?>" alt=""></a>
 
                     <div class="news-info-cat">
-                        <p class="news-txt"><?php echo VtHelper::truncate($listNews[0]['header'], 80, '...'); ?><a href="<?php echo url_for2('article_detail', array('slug' => $listNews[0]['slug'])) ?>" class="readmore" title="Xem tiếp">...Chi tiết >></a></p>
+                        <p class="news-txt">
+<!--                            <span class="news-date">-->
+<!--                                --><?php
+//                                if ($listNews[0]['published_time']) echo VtHelper::getFormatDate($listNews[0]['published_time']);
+//                                ?>
+<!--                            </span>-->
+                            <?php echo VtHelper::truncate($listNews[0]['header'], 80, '...'); ?><a href="<?php echo url_for2('article_detail', array('slug' => $listNews[0]['slug'])) ?>" class="readmore" title="Xem tiếp">...Chi tiết >></a></p>
 
                     </div>
                     <div class="more-news">
